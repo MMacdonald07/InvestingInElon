@@ -1,0 +1,3 @@
+nltk
+tweepy
+alpaca-trade-api
