@@ -74,7 +74,7 @@ if __name__ == '__main__':
         tweets_listener = MyStreamListener(tw_api)
         stream = tweepy.Stream(tw_api.auth, tweets_listener)
         # Filters tweets to only receive Elon's - use http://gettwitterid.com/ for user ID
-        stream.filter(follow=['44196397', '1004809825027547137'], languages=['en'])
+        stream.filter(follow=['44196397'], languages=['en'])
     except KeyboardInterrupt as e:
         # if user stops stream close out all positions
         print('\nProgram stopped by user...')
